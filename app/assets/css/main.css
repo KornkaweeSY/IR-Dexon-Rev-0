@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+* {
+    font-family: "Montserrat", "Kanit", sans-serif;
+}
+
+/* สำหรับ element ที่มีภาษาไทย */
+:lang(th) {
+    font-family: "Kanit", sans-serif;
+}
+
+/* สำหรับ element ที่มีภาษาอังกฤษ */
+:lang(en) {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: "Montserrat", "Kanit", sans-serif;
+}

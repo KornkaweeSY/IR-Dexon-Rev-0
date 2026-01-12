@@ -29,14 +29,11 @@ const modules = [Autoplay, Pagination]
                                     Welcome to
                                 </p>
                             </div>
-                            <h1 class="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 drop-shadow-2xl leading-tight animate-slide-up">
+                            <h1 class="text-6xl md:text-7xl lg:text-7xl font-bold mb-6 drop-shadow-2xl leading-tight animate-slide-up">
                                 <span class="bg-linear-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
                                     Investor Relations
                                 </span>
                             </h1>
-                            <!-- <p class="text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed drop-shadow-lg animate-fade-in-delay">
-                                Discover comprehensive financial insights and strategic updates from DEXON
-                            </p> -->
                             <div class="flex gap-4 mt-8 animate-fade-in-delay-2">
                                 <button class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                                     Explore More
@@ -104,7 +101,7 @@ const modules = [Autoplay, Pagination]
 
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-semibold text-start mb-12">Important Financial Information 9M/2025</h2>
+                <h2 class="text-4xl font-bold text-start mb-12">Important Financial Information 9M/2025</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white rounded-xl shadow-lg p-6">
                         <Chart1 />
@@ -121,87 +118,75 @@ const modules = [Autoplay, Pagination]
 
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-semibold text-start mb-12">SET Announcements</h2>
-                <Swiper
-                    :modules="modules"
-                    :slides-per-view="1"
-                    :space-between="30"
-                    :autoplay="{
-                        delay: 3000,
-                        disableOnInteraction: false,
-                    }"
-                    :pagination="{ clickable: true }"
-                    :navigation="true"
-                    :breakpoints="{
-                        640: { slidesPerView: 1 },
-                        768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 4 },
-                    }"
-                    class="mySwiper"
-                >
-                    <SwiperSlide>
-                        <div class="bg-white text-center p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
-                            <div class="text-6xl mb-6">�</div>
-                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Q4 2025 Results</h3>
-                            <!-- <p class="text-gray-600 mb-4">Strong financial performance with 15% revenue growth</p> -->
-                            <button class="text-blue-600 font-semibold hover:text-blue-800 transition">Read More →</button>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="bg-white text-center p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
-                            <div class="text-6xl mb-6">🎯</div>
-                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Strategic Partnership</h3>
-                            <!-- <p class="text-gray-600 mb-4">New collaboration to expand market presence</p> -->
-                            <button class="text-blue-600 font-semibold hover:text-blue-800 transition">Read More →</button>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="bg-white text-center p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
-                            <div class="text-6xl mb-6">🌱</div>
-                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Sustainability Initiative</h3>
-                            <!-- <p class="text-gray-600 mb-4">Committed to carbon neutrality by 2030</p> -->
-                            <button class="text-blue-600 font-semibold hover:text-blue-800 transition">Read More →</button>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="bg-white text-center p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
-                            <div class="text-6xl mb-6">�</div>
-                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Innovation Award</h3>
-                            <!-- <p class="text-gray-600 mb-4">Recognized for technological excellence</p> -->
-                            <button class="text-blue-600 font-semibold hover:text-blue-800 transition">Read More →</button>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="bg-white text-center p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
-                            <div class="text-6xl mb-6">�</div>
-                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Innovation Award</h3>
-                            <!-- <p class="text-gray-600 mb-4">Recognized for technological excellence</p> -->
-                            <button class="text-blue-600 font-semibold hover:text-blue-800 transition">Read More →</button>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="bg-white text-center p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
-                            <div class="text-6xl mb-6">�</div>
-                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Innovation Award</h3>
-                            <!-- <p class="text-gray-600 mb-4">Recognized for technological excellence</p> -->
-                            <button class="text-blue-600 font-semibold hover:text-blue-800 transition">Read More →</button>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div class="bg-white text-center p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
-                            <div class="text-6xl mb-6">�</div>
-                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Innovation Award</h3>
-                            <!-- <p class="text-gray-600 mb-4">Recognized for technological excellence</p> -->
-                            <button class="text-blue-600 font-semibold hover:text-blue-800 transition">Read More →</button>
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
+                <h2 class="text-4xl font-bold text-start mb-12">SET Announcements</h2>
+                <div class="pb-16">
+                    <Swiper
+                        :modules="modules"
+                        :slides-per-view="1"
+                        :space-between="30"
+                        :autoplay="{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }"
+                        :pagination="{ clickable: true }"
+                        :navigation="true"
+                        :breakpoints="{
+                            640: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 4 },
+                        }"
+                        class="mySwiper pb-12!"
+                    >
+                        <SwiperSlide>
+                            <div class="h-[250px] flex flex-col items-start justify-between gap-4 bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <p class="text-[19px] text-[#b7b7b7] font-bold">17 December 2025</p>
+                                <h3 class="text-[19px] font-bold mb-4 text-[#1e1450] line-clamp-3">Notification of Board Resolution regarding the change of Chief Executive Officer</h3>
+                                <button class="text-red-600 font-semibold hover:text-red-800 transition">Read More →</button>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div class="h-[250px] flex flex-col items-start justify-between gap-4 bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <p class="text-[19px] text-[#b7b7b7] font-bold">28 November 2025</p>
+                                <h3 class="text-[19px] font-bold mb-4 text-[#1e1450] line-clamp-3">Invitation for shareholders to propose agenda items for the 2026 Annual General Meeting of Shareholders and nominate candidates for election as company directors</h3>
+                                <button class="text-red-600 font-semibold hover:text-red-800 transition">Read More →</button>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div class="h-[250px] flex flex-col items-start justify-between gap-4 bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <p class="text-[19px] text-[#b7b7b7] font-bold">10 November 2025</p>
+                                <h3 class="text-[19px] font-bold mb-4 text-[#1e1450] line-clamp-3">Management Discussion and Analysis Quarter 3 Ending 30 Sep 2025  (Revised)</h3>
+                                <button class="text-red-600 font-semibold hover:text-red-800 transition">Read More →</button>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div class="h-[250px] flex flex-col items-start justify-between gap-4 bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <p class="text-[19px] text-[#b7b7b7] font-bold">10 November 2025</p>
+                                <h3 class="text-[19px] font-bold mb-4 text-[#1e1450] line-clamp-3">Notification of Board Resolution regarding the change of Chief Executive Officer</h3>
+                                <button class="text-red-600 font-semibold hover:text-red-800 transition">Read More →</button>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div class="h-[250px] flex flex-col items-start justify-between gap-4 bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <p class="text-[19px] text-[#b7b7b7] font-bold">10 November 2025</p>
+                                <h3 class="text-[19px] font-bold mb-4 text-[#1e1450] line-clamp-3">Notification of the establishment of a subsidiary</h3>
+                                <button class="text-red-600 font-semibold hover:text-red-800 transition">Read More →</button>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div class="h-[250px] flex flex-col items-start justify-between gap-4 bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <p class="text-[19px] text-[#b7b7b7] font-bold">07 November 2025</p>
+                                <h3 class="text-[19px] font-bold mb-4 text-[#1e1450] line-clamp-3">Financial Performance Quarter 3 (F45) (Reviewed)</h3>
+                                <button class="text-red-600 font-semibold hover:text-red-800 transition">Read More →</button>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
             </div>
         </section>
 
         <section class="py-20 bg-linear-to-b from-gray-50 to-white">
             <div class="container mx-auto px-6 flex flex-col gap-6">
-                <h2 class="text-4xl font-semibold text-start mb-12">You may be interested in</h2>
+                <h2 class="text-4xl font-bold text-start mb-12">You may be interested in</h2>
                 <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
                     <div class="col-span-1 md:col-span-2 rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                         <div class="relative overflow-hidden aspect-7/8">
