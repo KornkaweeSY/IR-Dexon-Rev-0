@@ -149,7 +149,7 @@ onUnmounted((): void => {
 
                 <div class="flex flex-col items-end gap-1">
                     <div class="flex items-center space-x-4">
-                        <a href="" class="transition-colors duration-300" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">Go to Corporate Site</a>
+                        <a href="https://www.dexon-technology.com/" target="_blank" class="transition-colors duration-300" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">Go to Corporate Site</a>
                         <select name="language" id="language" class="px-3 py-1 rounded-md border text-sm focus:outline-none focus:ring-2 transition-all cursor-pointer backdrop-blur-sm" :class="isScrolled ? 'border-gray-300 text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-blue-500' : 'border-white/30 text-white bg-white/10 hover:bg-white/20 focus:ring-white/50'">
                             <option value="en" class="text-gray-800">EN</option>
                             <option value="th" class="text-gray-800">TH</option>
@@ -157,7 +157,7 @@ onUnmounted((): void => {
                     </div>
                     <div class="hidden md:flex space-x-8 items-center">
                         <div class="relative" ref="overviewRef">
-                            <button @click="toggleOverview" class="py-2 relative nav-link transition-colors duration-300" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
+                            <button @click="toggleOverview" class="py-2 relative nav-link transition-colors duration-300 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
                                 Overview
                             </button>
                             <Transition name="dropdown-fade">
@@ -175,7 +175,7 @@ onUnmounted((): void => {
                             </Transition>
                         </div>
                         <div class="relative" ref="financialsRef">
-                            <button @click="toggleFinancials" class="py-2 relative nav-link transition-colors duration-300" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
+                            <button @click="toggleFinancials" class="py-2 relative nav-link transition-colors duration-300 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
                                 Financials Info
                             </button>
                             <Transition name="dropdown-fade">
@@ -193,7 +193,7 @@ onUnmounted((): void => {
                             </Transition>
                         </div>
                         <div class="relative" ref="stockInfoRef">
-                            <button @click="toggleStockInfo" class="py-2 relative nav-link transition-colors duration-300" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
+                            <button @click="toggleStockInfo" class="py-2 relative nav-link transition-colors duration-300 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
                                 Stock Info
                             </button>
                             <Transition name="dropdown-fade">
@@ -208,7 +208,7 @@ onUnmounted((): void => {
                             </Transition>
                         </div>
                         <div class="relative" ref="shareholderInfoRef">
-                            <button @click="toggleShareholderInfo" class="py-2 relative nav-link transition-colors duration-300" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
+                            <button @click="toggleShareholderInfo" class="py-2 relative nav-link transition-colors duration-300 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
                                 Shareholder Info
                             </button>
                             <Transition name="dropdown-fade">
@@ -223,7 +223,7 @@ onUnmounted((): void => {
                             </Transition>
                         </div>
                         <div class="relative" ref="reportsAndPresentationsRef">
-                            <button @click="toggleReportsAndPresentations" class="py-2 relative nav-link transition-colors duration-300" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
+                            <button @click="toggleReportsAndPresentations" class="py-2 relative nav-link transition-colors duration-300 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
                                 Reports and Presentations
                             </button>
                             <Transition name="dropdown-fade">
@@ -238,7 +238,7 @@ onUnmounted((): void => {
                             </Transition>
                         </div>
                         <div class="relative" ref="newsAndEventsRef">
-                            <button @click="toggleNewsAndEvents" class="py-2 relative nav-link transition-colors duration-300" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
+                            <button @click="toggleNewsAndEvents" class="py-2 relative nav-link transition-colors duration-300 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'">
                                 News and Events
                             </button>
                             <Transition name="dropdown-fade">
