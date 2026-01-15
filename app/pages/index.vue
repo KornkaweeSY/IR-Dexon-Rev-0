@@ -46,7 +46,7 @@ const { t } = useLanguage()
                     </div>
                 </div>
             </div>
-            <div class="absolute bottom-0 left-0 right-0 z-10 pb-6 sm:pb-8 md:pb-12 text-white">
+            <div class="hidden md:block lg:block absolute bottom-0 left-0 right-0 z-10 pb-6 sm:pb-8 md:pb-12 text-white">
                 <div class="container mx-auto px-4 sm:px-6">
                     <div class="bg-white/10 backdrop-blur-md rounded-xl sm:rounded-2xl shadow-2xl border border-white/20 p-4 sm:p-6 md:p-8">
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
@@ -80,15 +80,12 @@ const { t } = useLanguage()
                                     {{ t('index.volume') }}
                                 </div>
                                 <div class="flex items-baseline gap-2">
-                                    <span class="text-2xl sm:text-3xl font-bold">80,200.00</span>
+                                    <span class="text-2xl sm:text-3xl font-bold md:text-2xl">80,200.00</span>
                                 </div>
-                                <!-- <div class="text-sm text-gray-400">
-                                    28,549,686 shares
-                                </div> -->
                             </div>
                             
                             <div class="flex flex-col gap-2 sm:gap-3 justify-center items-center">
-                                <button class="w-full flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30 rounded-lg px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lgZ">
+                                <button class="w-full flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30 rounded-lg px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-semibold md:text-[10px] lg:text-[18px] transition-all duration-300 hover:scale-105 hover:shadow-lgZ">
                                     {{ t('stock.quote') }} 
                                     <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="18" height="18" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1_copy_10" data-name="Layer 1 copy 10"><g id="_138" data-name="138"><path d="m256 0c-141.38 0-256 114.62-256 256s114.62 256 256 256 256-114.62 256-256-114.62-256-256-256zm-60.12 402.89-22.88-22.89 124.05-124-124-124 22.86-22.86 146.87 146.86z" fill="#fdfdfd" fill-opacity="1" data-original-color="#000000ff" stroke="none" stroke-opacity="1"/></g></g></g></g></svg>
                                 </button>
