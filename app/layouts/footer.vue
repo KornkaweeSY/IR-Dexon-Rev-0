@@ -1,3 +1,7 @@
+<script setup>
+const { t } = useLanguage()
+</script>
+
 <template>
     <footer class="bg-linear-to-b from-gray-900 to-gray-950 text-white relative overflow-hidden">
         <!-- Decorative background elements -->
@@ -11,17 +15,17 @@
                 <!-- Contact Section -->
                 <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
                     <img src="/logo/dexon_white.png" alt="DEXON Logo" class="w-28 sm:w-32 md:w-36 h-auto mb-4 sm:mb-5 md:mb-6 brightness-110">
-                    <h3 class="text-base sm:text-lg md:text-xl font-bold mb-4 sm:mb-5 md:mb-6 text-blue-400 uppercase tracking-wide">Contact Our Investor Relations Team</h3>
+                    <h3 class="text-base sm:text-lg md:text-xl font-bold mb-4 sm:mb-5 md:mb-6 text-blue-400 uppercase tracking-wide">{{ t('footer.contact_title') }}</h3>
                     <div class="space-y-2 sm:space-y-2.5 md:space-y-3 text-gray-300 text-sm leading-relaxed">
-                        <p class="text-sm sm:text-base md:text-base font-semibold text-white">Ms. Uracha Arunyanart</p>
-                        <p class="text-xs sm:text-sm md:text-sm text-gray-400">Dexon Technology Public Company Limited</p>
-                        <p class="text-gray-400 text-xs sm:text-sm md:text-sm">78/4-5 Moo 6, Sukhumvit Road,<br>Ban Chang, Rayong, 21130, Thailand</p>
+                        <p class="text-sm sm:text-base md:text-base font-semibold text-white">{{ t('footer.contact_name') }}</p>
+                        <p class="text-xs sm:text-sm md:text-sm text-gray-400">{{ t('footer.company_name') }}</p>
+                        <p class="text-gray-400 text-xs sm:text-sm md:text-sm" v-html="t('footer.address')"></p>
                         <div class="pt-2 space-y-1.5 sm:space-y-2 md:space-y-2">
                             <p class="flex items-center gap-2 text-xs sm:text-sm md:text-sm">
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-4 md:h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                                 </svg>
-                                <span>033-012-484-7 Ext. 222</span>
+                                <span>{{ t('footer.phone') }}</span>
                             </p>
                             <p class="flex items-center gap-2 text-xs sm:text-sm">
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -33,7 +37,7 @@
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-4 md:h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
                                 </svg>
-                                <span>033-012-530</span>
+                                <span>{{ t('footer.fax') }}</span>
                             </p>
                         </div>
                     </div>
@@ -41,14 +45,14 @@
 
                 <!-- Quick Links Section -->
                 <div>
-                    <h4 class="text-base sm:text-lg md:text-xl font-bold mb-4 sm:mb-5 md:mb-6 text-white uppercase tracking-wide border-b border-gray-700 pb-2 sm:pb-2.5 md:pb-3">Quick Links</h4>
+                    <h4 class="text-base sm:text-lg md:text-xl font-bold mb-4 sm:mb-5 md:mb-6 text-white uppercase tracking-wide border-b border-gray-700 pb-2 sm:pb-2.5 md:pb-3">{{ t('footer.quick_links') }}</h4>
                     <ul class="space-y-2 sm:space-y-2.5 md:space-y-3">
                         <li>
                             <a href="#home" class="text-sm sm:text-base md:text-base text-gray-400 hover:text-blue-400 transition-all duration-300 flex items-center gap-2 group">
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-4 md:h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                 </svg>
-                                <span>Suggestion Channel</span>
+                                <span>{{ t('footer.suggestion_channel') }}</span>
                             </a>
                         </li>
                         <li>
@@ -56,7 +60,7 @@
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-4 md:h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                 </svg>
-                                <span>Resources</span>
+                                <span>{{ t('footer.resources') }}</span>
                             </a>
                         </li>
                         <li>
@@ -64,7 +68,7 @@
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-4 md:h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                 </svg>
-                                <span>Work with Us</span>
+                                <span>{{ t('footer.work_with_us') }}</span>
                             </a>
                         </li>
                     </ul>
@@ -72,14 +76,14 @@
 
                 <!-- Legal Section -->
                 <div>
-                    <h4 class="text-base sm:text-lg md:text-xl font-bold mb-4 sm:mb-5 md:mb-6 text-white uppercase tracking-wide border-b border-gray-700 pb-2 sm:pb-2.5 md:pb-3">Legal & Compliance</h4>
+                    <h4 class="text-base sm:text-lg md:text-xl font-bold mb-4 sm:mb-5 md:mb-6 text-white uppercase tracking-wide border-b border-gray-700 pb-2 sm:pb-2.5 md:pb-3">{{ t('footer.legal') }}</h4>
                     <ul class="space-y-2 sm:space-y-2.5 md:space-y-3">
                         <li>
                             <a href="#" class="text-sm sm:text-base md:text-base text-gray-400 hover:text-blue-400 transition-all duration-300 flex items-center gap-2 group">
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-4 md:h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                 </svg>
-                                <span>Privacy Policy</span>
+                                <span>{{ t('footer.privacy_policy') }}</span>
                             </a>
                         </li>
                         <li>
@@ -87,7 +91,7 @@
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-4 md:h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                 </svg>
-                                <span>Business Ethics</span>
+                                <span>{{ t('footer.business_ethics') }}</span>
                             </a>
                         </li>
                         <li>
@@ -95,7 +99,7 @@
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-4 md:h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                 </svg>
-                                <span>GWO CSS</span>
+                                <span>{{ t('footer.anti_corruption') }}</span>
                             </a>
                         </li>
                     </ul>
@@ -103,7 +107,7 @@
 
                 <!-- Follow Section -->
                 <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
-                    <h4 class="text-base sm:text-lg md:text-xl font-bold mb-4 sm:mb-5 md:mb-6 text-white uppercase tracking-wide border-b border-gray-700 pb-2 sm:pb-2.5 md:pb-3">Follow Us</h4>
+                    <h4 class="text-base sm:text-lg md:text-xl font-bold mb-4 sm:mb-5 md:mb-6 text-white uppercase tracking-wide border-b border-gray-700 pb-2 sm:pb-2.5 md:pb-3">{{ t('footer.follow') }}</h4>
                     <div class="space-y-3 sm:space-y-3.5 md:space-y-4">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center">
@@ -112,8 +116,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="text-xs text-gray-500 uppercase">Email</p>
-                                <a href="mailto:info@irdexon.com" class="text-sm sm:text-base text-gray-300 hover:text-blue-400 transition-colors break-all">info@irdexon.com</a>
+                                <p class="text-xs text-gray-500 uppercase">{{ t('footer.email') }}</p>
+                                <a href="mailto:info@irdexon.com" class="text-sm sm:text-base text-gray-300 hover:text-blue-400 transition-colors break-all">{{ t('footer.email_address') }}</a>
                             </div>
                         </div>
                         <div class="flex items-center gap-3">
@@ -123,8 +127,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="text-xs text-gray-500 uppercase">Telephone</p>
-                                <p class="text-sm sm:text-base text-gray-300">02-XXX-XXXX</p>
+                                <p class="text-xs text-gray-500 uppercase">{{ t('footer.telephone') }}</p>
+                                <p class="text-sm sm:text-base text-gray-300">{{ t('footer.phone_number') }}</p>
                             </div>
                         </div>
                         <div class="flex gap-2 sm:gap-3 md:gap-3 pt-2">
@@ -145,13 +149,13 @@
 
             <!-- Bottom Bar -->
             <div class="border-t border-gray-800 mt-8 sm:mt-10 md:mt-12 lg:mt-12 pt-6 sm:pt-7 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 md:gap-4">
-                <p class="text-gray-500 text-xs sm:text-sm md:text-sm text-center md:text-left">&copy; 2026 IR-Dexon. All rights reserved.</p>
+                <p class="text-gray-500 text-xs sm:text-sm md:text-sm text-center md:text-left">&copy; 2026 {{ t('footer.dexon_tech') }}. {{ t('footer.rights') }}.</p>
                 <div class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm md:text-sm text-gray-500">
-                    <a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-blue-400 transition-colors">{{ t('footer.terms') }}</a>
                     <span class="hidden sm:inline">|</span>
-                    <a href="#" class="hover:text-blue-400 transition-colors">Cookie Policy</a>
+                    <a href="#" class="hover:text-blue-400 transition-colors">{{ t('footer.cookie') }}</a>
                     <span class="hidden sm:inline">|</span>
-                    <a href="#" class="hover:text-blue-400 transition-colors">Sitemap</a>
+                    <a href="#" class="hover:text-blue-400 transition-colors">{{ t('footer.sitemap') }}</a>
                 </div>
             </div>
         </div>
